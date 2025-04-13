@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            padding: 300px;
+            font-family: arial;
+        };
+        label {
+            margin-right: 20px;
+            font-weight: 900;
+            margin-bottom: 10px;
+        };
+        input{
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            transition: 1s;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        };
+        input:focus{
+            outline: none;
+            border-color: aqua;
+        };
+        form {
+            width: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+        }
+
+    </style>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <form action="">
+        <!-- <input type="checkbox" id="checkBox"> -->
+
+        <label for="text">Ukrainian Hryvnia</label>
+        <input type="number" name="grn" id="grn">
+
+        <label for="text">USD</label>
+        <input type="number" name="usd" id="usd">
+    </form>
+</body>
+</html>
