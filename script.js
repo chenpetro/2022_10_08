@@ -142,8 +142,30 @@
 
 //////////////////////////////////////////////////////
 
+// get - to get data
+// post - to send data to the server
+// put - refresh existing data on the server
+// delete
+// head - similar to get
+
+// Server statuses: 
+// 1) info 100-199, 
+// 2) Success 200-299, 
+// 3) Redirection 300-399
+// 4) Error when request was successful but the needed data wasn´t found 400-499
+// 5) Server error 500-599
+
+
+// ReadyState 0 - method "open" hasn´t been called yet
+// ReadyState 1 - method "open" has been called
+// ReadyState 2 - method "sent" has been called
+// ReadyState 3 - method "responseText" has some data
+// ReadyState 4 - done, everything has been performed successfully 
+
+
 const inputGrn = document.getElementById('grn') 
 const inputUsd = document.getElementById('usd') 
+
 inputGrn.addEventListener('input', () => {
 let request = new XMLHttpRequest();
 // request.open(method, url, async, login, password);
@@ -165,3 +187,5 @@ request.addEventListener('readystatechange', function(){
 
 
 })
+
+//57 min Web Angular 101 Lesson 3 22 10
